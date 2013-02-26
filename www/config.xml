@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "Game"
+        id        = "Game2"
         version   = "2.2.0">
     <name>Game</name>
 
@@ -53,5 +53,6 @@
   <feature name="http://api.phonegap.com/1.0/media"/>
   <feature name="http://api.phonegap.com/1.0/network"/>
   <feature name="http://api.phonegap.com/1.0/notification"/>
-  <!--<plugin name="Media" value="org.apache.cordova.AudioHandler" />-->
+  <gap:plugin name="Media" />
+
 </widget>
