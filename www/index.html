@@ -41,16 +41,36 @@
     </style>
         <script type="text/javascript">
             function clickHandler() {
-                
+                var my_media = new Media("sounds/dog.wma", onSuccess, onError);
                 setTimeout(function () {
                     //alert("index");
                     $("#theImg").attr("src", "img/dog.jpg");
                     
                 }, 1000);
 
-                
+
             }
+
+
+            function onSuccess() {
+                alert("playAudio():Audio Success");
+            }
+
+            // onError Callback 
+            //
+            function onError(error) {
+                alert('code: ' + error.code + '\n' +
+                  'message: ' + error.message + '\n');
+            }
+
+
+            
+
+
+
          </script>
+
+
 
 </head>
 <body>
@@ -72,6 +92,8 @@
         app.initialize();
 
         </script>
+
+
 
 
 
